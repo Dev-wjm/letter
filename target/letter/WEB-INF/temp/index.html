@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style>
+    .my-jumbotron {
+      margin-top: 1.5rem;
+      padding-bottom: 0.75rem;
+    }
+    .search-input {
+      width: 50%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.35;
+      margin-left: 1.5rem;
+      color: #495057;
+      background-color: #fff;
+      background-image: none;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .card {
+      border: none;
+    }
+    .card-body {
+      padding: 0.25rem;
+    }
+
+    .book-note {
+      margin-top: 2rem;
+    }
+    .book-note img {
+      width: 9rem;
+    }
+    .book-order {
+      margin-bottom: 2rem;
+    }
+    .book-order .media {
+      margin-bottom: 1rem;
+    }
+    .book-order img {
+      width: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav navbar navbar-expand-md navbar-dark fixed-top bg-light justify-content-md-end">
+    <p>登陆 | 注册</p>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron my-jumbotron">
+      <div class="container">
+        <div class="row search">
+          <span class="h3">书籍搜索</span>
+          <input type="text" class="search-input">
+          <span>
+            <button type="button" class="btn btn-info" style="margin-left: .5rem;">搜索</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="new-book">
+      <h4>新书推荐</h4>
+      <hr />
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="./test.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-note">
+      <h4>读书速记</h4>
+      <hr />
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">文明将亡时，就沿存在主义溯源而上</h5>
+          世界不会一直坏下去，但是会越来越坏。 尼采哭马与柏拉图的《泰阿泰德篇》 试想一个情景，你在一家餐厅吃饭，满心苦闷，突然抑制不住询问邻桌的人，人生的意义究竟是什么？被你询问的人百分之九十九会将你当做疯...
+          <footer class="blockquote-footer">吴小明DEV in <cite title="Source Title">《泰阿泰德篇》</cite></footer>
+        </div>
+        <img class="ml-3 img-thumbnail" src="./test.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <div class="book-order">
+      <h4>图书排行榜</h4>
+      <hr />
+      <div class="media">
+        <img class="mr-3" src="./test.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="media">
+        <img class="mr-3" src="./test.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="media">
+        <img class="mr-3" src="./test.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="media">
+        <img class="mr-3" src="./test.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="media">
+        <img class="mr-3" src="./test.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style>
+    .my-nav {
+      background-color: #545652;
+      color: #d5d5d5;
+      height: 2.5rem;
+    }
+    .menu {
+      margin-top: -1rem;
+      padding-top: 1rem;
+      height: 100%;
+      color: #d5d5d5;
+      position: absolute;
+      background-color: #f6f6f1;
+    }
+    .menu ul li {
+      height: 2.5rem;;
+    }
+    .menu ul li a{
+      display:inline-block; 
+      padding:0 1.5rem; 
+      height:2.5rem; 
+      width: 7.5rem;
+      line-height:2.5rem;;
+      color:rgb(19, 15, 15); 
+      font-size:1rem;
+    } 
+    .menu ul li a:hover {
+      background-color: dimgray;
+      text-decoration : none;
+    }
+    .admin-jumbotron {
+      margin-left: 8rem;
+      margin-top: 3.5rem;
+      border-radius: 0;
+    }
+    .admin-jumbotron h6 {
+      font-weight: 600;
+      margin-left: 1.5rem;
+      font-size: 1.2rem;
+    }
+    .data-search {
+      margin-left: 3rem;
+    }
+    hr {
+      border-top: 1px solid rgba(175, 175, 161, 0.774);
+    }
+    .data-search label {
+      font-weight: 600;
+    }
+    .data-search .btn {
+      margin-top: .5rem;
+    }
+    .admin-jumbotron button {
+      margin-left: .5rem;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="nav my-nav navbar navbar-expand-md fixed-top justify-content-end">
+    欢迎您，管理员
+  </div>
+
+  <div class="container-fluid" style="padding-left: 0%">
+    <div class="menu">
+      <ul class="list-unstyled">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">用户管理</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">书评管理</a></li>
+        <li><a href="#">权限管理</a></li>
+        <li><a href="#">数据字典</a></li>
+      </ul>
+    </div>
+
+    <div class="admin-jumbotron">
+      <div class="alert alert-primary" role="alert">
+        <h3>用户管理</h3>
+      </div>
+      <hr>
+      <h6>数据查询</h6>
+      <div class="form-group">
+        <div class="row data-search">
+          <div class="col-3">
+            <label for="username">用户名：</label>
+            <input type="email" class="form-control" id="username" placeholder="用户名">
+          </div>
+          <div class="col-3">
+            <label for="create-time">创建时间：</label>
+            <input type="email" class="form-control" id="create-time" placeholder="创建时间">
+          </div>
+          <div class="col-3">
+            <br />
+            <button class="btn btn-outline-primary">查询</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <h6>用户列表</h6>
+      <hr>
+      <div class="row" style="margin-left: .5rem">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#addUser">新增用户</button>
+          <button type="button" class="btn btn-outline-primary">删除用户</button>
+          <button type="button" class="btn btn-outline-primary">导出</button>
+          <button type="button" class="btn btn-outline-primary">导入</button>
+      </div>
+      <hr>
+      <table class="table table-bordered" style="margin-left: .75rem">
+        <thead>
+          <tr>
+            <th scope="col"><input type="checkbox" name="all" id="all"></th>
+            <th scope="col">用户名</th>
+            <th scope="col">性别</th>
+            <th scope="col">联系方式</th>
+            <th scope="col">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><input type="checkbox" name="" id=""></th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td><button class="btn btn-outline-primary" data-id="testid" data-toggle="modal" data-target="#myModal">详情</button><button class="btn btn-outline-primary">修改</button></td>
+          </tr>
+          <tr>
+            <th scope="row"><input type="checkbox" name="" id=""></th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td><button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal" data-id="test">详情</button><button class="btn btn-outline-primary">修改</button></td>
+          </tr>
+          <tr>
+            <th scope="row"><input type="checkbox" name="" id=""></th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+            <td>@fat</td>
+            <td><button class="btn btn-outline-primary">详情</button><button class="btn btn-outline-primary">修改</button></td>
+          </tr>
+          <tr>
+           <td colspan="5">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">上一页</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">下一页</a>
+                  </li>
+                </ul>
+              </nav>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- 详情/修改 -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <input type="text" value="" hidden id="hidddenId" />
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- 添加用户 -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="addUser">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">添加用户</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="">用户名</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            
+            <div class="form-check">
+              <label for="">性别</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>.男</option>
+                <option>.女</option>
+              </select>
+            </div>
+            
+            <label for="">年龄</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            <label for="">居住地</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            <label for="">邮箱</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            <label for="">手机号码</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            <label for="">出生日期</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" />
+            <label for="">个人简介</label>
+            <textarea class="form-control" rows="3"></textarea>
+            <label for="">头像设置</label>
+            <input type="file" id="inputGroupFile01" class="custom-file-input" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script>
+    $('#myModal').on('shown.bs.modal', function (e) {
+     
+      console.log($(e.relatedTarget).data('id'))
+
+      // 查询数据库
+      // 隐藏模态框
+      // $('#myModal').modal('hide');
+    })
+  </script>
+</body>
+</html>

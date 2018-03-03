@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style>
+    .my-nav {
+      background-color: #545652;
+      color: #d5d5d5;
+    }
+    .my-jumbotron {
+      padding-bottom: .75rem;
+      background: #f6f6f1;
+      margin-bottom: -1rem;
+    }
+    .search {
+      margin-left: .05rem;
+    }
+    .search-input {
+      width: 50%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.35;
+      margin-left: 1.5rem;
+      color: #495057;
+      background-color: #fff;
+      background-image: none;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .my-menu {
+      margin-top: 1rem;
+      margin-bottom: -.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav my-nav navbar navbar-expand-md fixed-top justify-content-end">
+    登陆 | 注册
+  </nav>
+    
+  <main role="main">
+    <div class="jumbotron my-jumbotron">
+      <div class="container">
+        <div class="row search">
+          <span class="h3">书籍搜索</span>
+          <input type="text" class="search-input">
+          <span>
+            <button type="button" class="btn btn-info" style="margin-left: .5rem;">搜索</button>
+          </span>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="list-inline my-menu">
+          <li class="list-inline-item"><a href="#">我读</a></li>
+          <li class="list-inline-item"><a href="#">动态</a></li>
+          <li class="list-inline-item"><a href="#">分类浏览</a></li>
+          <li class="list-inline-item"><a href="#">年度榜单</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  
+  </main>
+
+
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

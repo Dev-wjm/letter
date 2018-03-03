@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>后台管理</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+     .el-header, .el-footer {
+        background-color: #B3C0D1;
+        color: #333;
+        text-align: center;
+        line-height: 60px;
+        padding: 0;
+      }
+      
+      .el-aside {
+        background-color: #D3DCE6;
+        color: #333;
+        text-align: center;
+        line-height: 200px;
+      }
+      
+      .el-main {
+        background-color: #E9EEF3;
+        color: #333;
+        text-align: center;
+        /* line-height: 160px; */
+      }
+      
+      body > .el-container {
+        margin-bottom: 40px;
+      }
+      
+      .el-container:nth-child(5) .el-aside,
+      .el-container:nth-child(6) .el-aside {
+        line-height: 260px;
+      }
+      
+      .el-container:nth-child(7) .el-aside {
+        line-height: 320px;
+      }
+      .el-submenu .el-menu-itemm {
+        min-width: 0;
+      }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <el-container>
+      <el-header>
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+          <el-menu-item index="1" style="width: 200px;">系统管理</el-menu-item>
+          <el-row type="flex" justify="end">
+            <el-submenu index="2">
+              <template slot="title">我的工作台</template>
+              <el-menu-item index="2-1" style="min-width: 0">个人中心</el-menu-item>
+              <el-menu-item index="2-2" style="min-width: 0">退出</el-menu-item>
+            </el-submenu>
+          </el-row>
+        </el-menu>
+      </el-header>
+      <el-container>
+        <el-aside width="200px">
+          <el-menu style="height: 99.5%;overflow: hidden;width: 99%;">
+            <el-menu-item index="1"><a href="./ui-userList.html" target="#myFrameName">用户管理</a></el-menu-item>
+            <el-submenu index="2">
+              <template slot="title">评论管理</template>
+              <el-menu-item index="2-1">书评管理</el-menu-item>
+              <el-menu-item index="2-2">读书笔记</el-menu-item>
+            </el-submenu>
+            <el-submenu index="3">
+              <template slot="title">权限管理</template>
+              <el-menu-item index="3-1">用户角色</el-menu-item>
+              <el-menu-item index="3-2">角色权限</el-menu-item>
+            </el-submenu>
+            <el-submenu index="4">
+              <template slot="title">书籍管理</template>
+              <el-menu-item index="4-1">书籍详细</el-menu-item>
+              <el-menu-item index="4-2">书籍类别</el-menu-item>
+              <el-menu-item index="4-3">推荐管理</el-menu-item>
+            </el-submenu>
+            <el-menu-item index="5">数据字典</el-menu-item>
+            <el-menu-item index="6">数据统计&分析</el-menu-item>
+          </el-menu>
+        </el-aside>
+        <el-main>
+          <br/>
+          <br/>
+          <iframe id="myFrameId" name="myFrameName" >
+              欢迎来到XXXX后台管理系统<br/>
+              本系统使用使用：SSH(Spring + Spring MVC + Hibernate) & Shiro & JPA & MySQL & Element-UI 等技术构建 <br/>
+              本系统是测试版本，相关功能还在进行优化OR开发
+
+          </iframe> 
+          
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+
+
+   <!-- 先引入 Vue -->
+   <script src="https://unpkg.com/vue/dist/vue.js"></script>
+   <!-- 引入组件库 -->
+   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+   <script>
+    var Main = {
+        data() {
+          return {
+            activeIndex: '1'
+          };
+        },
+        methods: {
+          handleSelect(key, keyPath) {
+            console.log(key, keyPath);
+          }
+        }
+      }
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#app')
+  </script>
+</body>
+</html>

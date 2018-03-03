@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style>
+    .my-nav {
+      background-color: #545652;
+      color: #d5d5d5;
+      height: 2.5rem;
+    }
+    .menu {
+      margin-top: -1rem;
+      padding-top: 1rem;
+      height: 100%;
+      color: #d5d5d5;
+      position: absolute;
+      background-color: #f6f6f1;
+    }
+    .menu ul li {
+      height: 2.5rem;;
+    }
+    .menu ul li a{
+      display:inline-block; 
+      padding:0 1.5rem; 
+      height:2.5rem; 
+      width: 7.5rem;
+      line-height:2.5rem;;
+      color:rgb(19, 15, 15); 
+      font-size:1rem;
+    } 
+    .menu ul li a:hover {
+      background-color: dimgray;
+      text-decoration : none;
+    }
+    .admin-jumbotron {
+      margin-left: 8rem;
+      margin-top: 3.5rem;
+      border-radius: 0;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="nav my-nav navbar navbar-expand-md fixed-top justify-content-end">
+    欢迎您，管理员
+  </div>
+
+  <div class="container-fluid" style="padding-left: 0%">
+    <div class="menu">
+      <ul class="list-unstyled">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">用户管理</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">书评管理</a></li>
+        <li><a href="#">权限管理</a></li>
+        <li><a href="#">数据字典</a></li>
+      </ul>
+    </div>
+
+    <div class="jumbotron admin-jumbotron">
+      <h1 class="display-3">Hello, world!</h1>
+      <p class="lead">这是基于SSH+JPA+MySql+BoostrapV4的开源项目</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
